@@ -1,0 +1,5 @@
+#!/bin/bash
+
+mons -o
+killall polybar
+i3-msg restart

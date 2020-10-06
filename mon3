@@ -1,0 +1,6 @@
+#!/bin/bash
+
+~/./.screenlayout/triple.sh
+i3-msg restart
+killall polybar
+polybar desktop &
