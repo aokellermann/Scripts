@@ -1,0 +1,13 @@
+#!/usr/bin/env python
+
+import random
+import sys
+
+rng = random.SystemRandom()
+
+dic = '/usr/share/dict/american-english' if len(sys.argv) == 1 else sys.argv[1]
+
+with open(dic, 'r') as f:
+    words = f.readlines()
+    print(" ".join([words[rng.randrange(0, len(words))].strip() for i in range(4)]))
+
